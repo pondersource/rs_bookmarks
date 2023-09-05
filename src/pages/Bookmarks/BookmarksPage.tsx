@@ -1,13 +1,11 @@
 import AppFlex from "@/components/Shared/AppFlex";
 import { FC, useState } from "react";
 
-import DeleteIcon from "@mui/icons-material/Delete";
 import {
   Box,
   Button,
   Card,
   CardContent,
-  IconButton,
   TextField
 } from "@mui/material";
 type IProps = {};
@@ -69,12 +67,3 @@ const BookmarksPage: FC<IProps> = ({ }) => {
 };
 
 export default BookmarksPage;
-
-
-const DeleteBookmark = ({ deleteBookmark }: any) => {
-  return (
-    <IconButton>
-      <DeleteIcon />
-    </IconButton>
-  );
-};

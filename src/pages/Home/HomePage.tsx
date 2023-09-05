@@ -112,11 +112,3 @@ const HomePage: FC<IProps> = ({}) => {
 };
 
 export default HomePage;
-
-const DeleteBookmark = ({ deleteBookmark }: any) => {
-  return (
-    <IconButton>
-      <DeleteIcon />
-    </IconButton>
-  );
-};

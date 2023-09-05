@@ -12,7 +12,7 @@ export interface IBookmark {
 
 export var Bookmarks = {
     name: "bookmarks",
-    builder: function (privateClient: any, publicClient: any) {
+    builder: function (privateClient: any, _: any) {
         privateClient.declareType('archive-bookmark', {
             "type": "object",
             "properties": {

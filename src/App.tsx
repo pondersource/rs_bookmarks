@@ -1,20 +1,12 @@
-import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import AppLayout from "./components/layout/AppLayout";
 import PageNotFound from "./pages/404/PageNotFound";
 import HomePage from "./pages/Home/HomePage";
 import { remoteStorage } from "./utils/remoteStorage";
-import BookmarksPage from "./pages/Bookmarks/BookmarksPage";
 
 function App() {
 
-  useEffect(() => {
-
-    // remoteStorage.access.claim('myfavoritedrinks', 'rw');
-
-  }, [])
-
-  remoteStorage.on('connected', () => {
+remoteStorage.on('connected', () => {
     const userAddress = remoteStorage.remote.userAddress;
     console.debug(`EVENT: ${userAddress} connected their remote storage.`);
   })
