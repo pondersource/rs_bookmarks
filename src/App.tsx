@@ -6,7 +6,7 @@ import { remoteStorage } from "./utils/remoteStorage";
 
 function App() {
 
-remoteStorage.on('connected', () => {
+  remoteStorage.on('connected', () => {
     const userAddress = remoteStorage.remote.userAddress;
     console.debug(`EVENT: ${userAddress} connected their remote storage.`);
   })
